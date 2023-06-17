@@ -10,6 +10,11 @@ namespace ConsoleGame
     {
         List<IOutputable> _elements;
 
+        public TextGenerater()
+        {
+            _elements = new List<IOutputable>();
+        }
+
         private void Reset()
         {
             Console.Clear();
