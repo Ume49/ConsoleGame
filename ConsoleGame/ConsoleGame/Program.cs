@@ -1,3 +1,7 @@
 ﻿// エントリポイント
 
-Console.WriteLine("Hello, World!");
+using ConsoleGame;
+
+TextGenerater text_generater = new TextGenerater();
+
+text_generater.Refresh();
