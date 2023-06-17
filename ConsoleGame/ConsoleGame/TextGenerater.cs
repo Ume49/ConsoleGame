@@ -12,5 +12,12 @@ namespace ConsoleGame
         {
             Console.Clear();
         }
+
+        public void Refresh()
+        {
+            Reset();
+
+            // 描画処理
+        }
     }
 }
