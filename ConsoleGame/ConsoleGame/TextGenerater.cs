@@ -8,6 +8,8 @@ namespace ConsoleGame
 {
     public class TextGenerater
     {
+        List<IOutputable> _elements;
+
         private void Reset()
         {
             Console.Clear();
