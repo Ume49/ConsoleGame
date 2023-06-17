@@ -8,5 +8,9 @@ namespace ConsoleGame
 {
     public class TextGenerater
     {
+        private void Reset()
+        {
+            Console.Clear();
+        }
     }
 }
