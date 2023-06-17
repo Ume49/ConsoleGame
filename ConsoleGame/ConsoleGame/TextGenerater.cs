@@ -27,6 +27,13 @@ namespace ConsoleGame
 #if DEBUG
             Console.WriteLine("#デバッグモード");
 #endif
+
+            foreach(var e in _elements)
+            {
+                var list = e.Output();
+
+                list.ForEach(x => Console.WriteLine(x));
+            }
         }
     }
 }
