@@ -24,7 +24,9 @@ namespace ConsoleGame
         {
             Reset();
 
-            // 描画処理
+#if DEBUG
+            Console.WriteLine("#デバッグモード");
+#endif
         }
     }
 }
