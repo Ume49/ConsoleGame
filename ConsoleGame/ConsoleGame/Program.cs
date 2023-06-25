@@ -26,4 +26,10 @@ text_generater.AddOutput(player_manager);
     enemy_manager.AddEnemy(enemy_kobold);
 }
 
-text_generater.Refresh();
+do
+{
+    text_generater.Refresh();
+    
+    Console.ReadLine();
+}
+while (true);
