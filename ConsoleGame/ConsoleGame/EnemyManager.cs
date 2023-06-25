@@ -23,6 +23,9 @@ namespace ConsoleGame
             {
                 output[0] += e.name;
                 output[1] += $"HP: {e.hp}";
+
+                int right_edge = Math.Max(output[0].Length, output[1].Length);
+                output.ForEach(x => x.PadRight(right_edge + 1));
             }
 
             return output;
