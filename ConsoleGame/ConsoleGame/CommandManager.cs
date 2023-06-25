@@ -13,6 +13,8 @@ namespace ConsoleGame
             Init,
         }
 
+        List<Command> _commands;
+
         private Phase _phase;
             
 
