@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Diagnostics;
+
 namespace ConsoleGame
 {
     public class EnemyManager : IOutputable
@@ -17,6 +19,8 @@ namespace ConsoleGame
 
         public List<string> Output()
         {
+            Debug.Assert(_enemies.Count > 0);
+
             List<string> output = new List<string>(_enemies.Count * 3 + 2);
 
             output.Add("・敵");

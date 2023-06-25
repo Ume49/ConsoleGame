@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Diagnostics;
+
 namespace ConsoleGame
 {
     public class PlayerManager : IOutputable
@@ -23,6 +25,8 @@ namespace ConsoleGame
 
         public List<string> Output()
         {
+            Debug.Assert(_players.Count > 0);
+
             List<string> output = new List<string>();
             output.Add("・プレイヤー");
             output.Add(string.Empty);
