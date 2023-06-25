@@ -14,5 +14,11 @@ namespace ConsoleGame
         {
             _players = new List<Player>();
         }
+
+        public PlayerManager AddPlayer(Player player)
+        {
+            _players.Add(player);
+            return this;
+        }
     }
 }
