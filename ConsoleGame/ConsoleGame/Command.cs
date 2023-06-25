@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleGame
 {
-    public class Command
+    public struct Command
     {
         public enum Act
         {
