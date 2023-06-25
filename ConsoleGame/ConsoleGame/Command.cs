@@ -16,5 +16,6 @@ namespace ConsoleGame
         }
 
         Act act;
+        int who;
     }
 }
