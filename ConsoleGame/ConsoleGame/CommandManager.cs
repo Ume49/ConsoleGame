@@ -26,5 +26,11 @@ namespace ConsoleGame
 
             return output;
         }
+
+        public CommandManager AddCommand(in Command command)
+        {
+            _commands.Add(command);
+            return this;
+        }
     }
 }
