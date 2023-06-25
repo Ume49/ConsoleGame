@@ -19,6 +19,12 @@ namespace ConsoleGame
         {
             List<string> output = new List<string>(2);
 
+            foreach (var e in enemies)
+            {
+                output[0] += e.name;
+                output[1] += $"HP: {e.hp}";
+            }
+
             return output;
         }
     }
