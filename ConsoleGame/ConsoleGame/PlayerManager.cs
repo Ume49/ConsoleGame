@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleGame
 {
-    public class PlayerManager
+    public class PlayerManager : IOutputable
     {
         List<Player> _players;
 
@@ -19,6 +19,13 @@ namespace ConsoleGame
         {
             _players.Add(player);
             return this;
+        }
+
+        public List<string> Output()
+        {
+            List<string> output = new List<string>();
+
+            return output;
         }
     }
 }
