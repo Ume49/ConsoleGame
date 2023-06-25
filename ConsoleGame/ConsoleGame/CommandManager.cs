@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConsoleGame
 {
-    public class CommandManager
+    public class CommandManager : IOutputable
     {
         public CommandManager() { }
+
+        public List<string> Output()
+        {
+            List<string> output = new List<string>();
+
+            return output;
+        }
     }
 }
