@@ -17,15 +17,15 @@ namespace ConsoleGame
 
         public List<string> Output()
         {
-            List<string> output = new List<string>(2);
+            List<string> output = new List<string>(_enemies.Count * 3 + 2);
+
+            output.Add("・敵");
 
             foreach (var e in _enemies)
             {
-                output[0] += e._name;
-                output[1] += $"HP: {e._hp}";
-
-                int right_edge = Math.Max(output[0].Length, output[1].Length);
-                output.ForEach(x => x.PadRight(right_edge + 1));
+                output.Add(e._name);
+                output.Add($"HP: {e._hp}");
+                output.Add(string.Empty);
             }
 
             return output;
