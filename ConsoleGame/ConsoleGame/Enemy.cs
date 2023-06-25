@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleGame
 {
-    public struct Enemy
+    public class Enemy
     {
         public string _name;
         public int _hp;

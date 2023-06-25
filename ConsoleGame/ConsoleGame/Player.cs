@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleGame
 {
-    public struct Player
+    public class Player
     {
         public string _name;
         public int _hp;
