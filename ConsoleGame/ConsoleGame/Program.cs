@@ -7,6 +7,9 @@ TextGenerater text_generater = new TextGenerater();
 EnemyManager enemy_manager = new EnemyManager();
 text_generater.AddOutput(enemy_manager);
 
+PlayerManager player_manager = new PlayerManager();
+text_generater.AddOutput(player_manager);
+
 {
     Enemy enemy_slime = new Enemy();
     enemy_slime._name = "岩スライム";
