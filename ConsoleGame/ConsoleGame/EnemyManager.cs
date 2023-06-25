@@ -17,6 +17,8 @@ namespace ConsoleGame
 
         public List<string> Output()
         {
+            List<string> output = new List<string>();
+
             return null;    // とりあえずnull
         }
     }
