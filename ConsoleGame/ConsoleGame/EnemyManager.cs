@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleGame
 {
-    public class EnemyManager
+    public class EnemyManager : IOutputable
     {
         List<Enemy> _enemies;
 
         public EnemyManager()
         {
             enemies = new List<Enemy>();
+        }
+
+        public List<string> Output()
+        {
+            return null;    // とりあえずnull
         }
     }
 }
