@@ -8,6 +8,14 @@ namespace ConsoleGame
 {
     public class CommandManager : IOutputable
     {
+        public enum Phase
+        {
+            Init,
+        }
+
+        private Phase _phase;
+            
+
         public CommandManager() { }
 
         public List<string> Output()
