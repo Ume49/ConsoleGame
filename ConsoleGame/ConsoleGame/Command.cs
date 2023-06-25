@@ -8,5 +8,13 @@ namespace ConsoleGame
 {
     public class Command
     {
+        public enum Act
+        {
+            Attack,
+            Deffence,
+            Special,
+        }
+
+        Act act;
     }
 }
