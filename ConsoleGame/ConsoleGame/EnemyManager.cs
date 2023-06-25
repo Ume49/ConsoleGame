@@ -30,5 +30,11 @@ namespace ConsoleGame
 
             return output;
         }
+
+        public EnemyManager AddEnemy(Enemy enemy)
+        {
+            enemies.Add(enemy);
+            return this;
+        }
     }
 }
