@@ -12,7 +12,7 @@ namespace ConsoleGame
 
         public PlayerManager()
         {
-            players = new List<Player>();
+            _players = new List<Player>();
         }
     }
 }
