@@ -26,6 +26,20 @@ text_generater.AddOutput(player_manager);
     enemy_manager.AddEnemy(enemy_kobold);
 }
 
+{
+    Player player_sowrdman = new Player();
+    player_sowrdman._name   = "剣士";
+    player_sowrdman._hp     = 10;
+    player_sowrdman._attack = 3;
+    player_manager.AddPlayer(player_sowrdman);
+
+    Player player_sorcerer = new Player();
+    player_sorcerer._name   = "魔法使い";
+    player_sorcerer._hp     = 6;
+    player_sorcerer._attack = 1;
+    player_manager.AddPlayer(player_sorcerer);
+}
+
 do
 {
     text_generater.Refresh();
