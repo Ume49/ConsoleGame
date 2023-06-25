@@ -35,5 +35,11 @@ namespace ConsoleGame
                 list.ForEach(x => Console.WriteLine(x));
             }
         }
+
+        public TextGenerater AddOutput(IOutputable output)
+        {
+            _elements.Add(output);
+            return this;
+        }
     }
 }
