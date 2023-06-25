@@ -20,7 +20,7 @@ namespace ConsoleGame
             Console.Clear();
         }
 
-        public void Refresh()
+        public TextGenerater Refresh()
         {
             Reset();
 
@@ -34,6 +34,8 @@ namespace ConsoleGame
 
                 list.ForEach(x => Console.WriteLine(x));
             }
+
+            return this;
         }
 
         public TextGenerater AddOutput(IOutputable output)
