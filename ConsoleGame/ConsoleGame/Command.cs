@@ -15,8 +15,8 @@ namespace ConsoleGame
             Special,
         }
 
-        Act act;
-        int who;
-        int target;
+        public Act act;
+        public int who;
+        public int target;
     }
 }
