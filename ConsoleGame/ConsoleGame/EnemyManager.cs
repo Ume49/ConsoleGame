@@ -19,7 +19,7 @@ namespace ConsoleGame
         {
             List<string> output = new List<string>(2);
 
-            return null;    // とりあえずnull
+            return output;
         }
     }
 }
