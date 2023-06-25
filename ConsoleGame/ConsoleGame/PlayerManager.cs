@@ -24,6 +24,15 @@ namespace ConsoleGame
         public List<string> Output()
         {
             List<string> output = new List<string>();
+            output.Add("・プレイヤー");
+            output.Add(string.Empty);
+
+            foreach(var p in _players) 
+            {
+                output.Add(p._name);
+                output.Add($"HP: {p._hp}");
+                output.Add(string.Empty);
+            }
 
             return output;
         }
