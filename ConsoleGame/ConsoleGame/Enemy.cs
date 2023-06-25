@@ -8,9 +8,9 @@ namespace ConsoleGame
 {
     public struct Enemy
     {
-        public string name;
-        public int hp;
-        public int attack;
-        public int deffence;
+        public string _name;
+        public int _hp;
+        public int _attack;
+        public int _deffence;
     }
 }

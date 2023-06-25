@@ -8,7 +8,7 @@ namespace ConsoleGame
 {
     public class EnemyManager
     {
-        List<Enemy> enemies;
+        List<Enemy> _enemies;
 
         public EnemyManager()
         {

@@ -8,8 +8,8 @@ namespace ConsoleGame
 {
     public struct Player
     {
-        public string name;
-        public int hp;
-        public int attack;
+        public string _name;
+        public int _hp;
+        public int _attack;
     }
 }

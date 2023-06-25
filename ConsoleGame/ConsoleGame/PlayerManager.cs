@@ -8,7 +8,7 @@ namespace ConsoleGame
 {
     public class PlayerManager
     {
-        List<Player> players;
+        List<Player> _players;
 
         public PlayerManager()
         {
