@@ -12,5 +12,6 @@
         public Act act;
         public CharacterBase who;
         public List<CharacterBase>? target;
+        public int speed;
     }
 }
