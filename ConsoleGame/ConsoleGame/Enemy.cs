@@ -17,5 +17,10 @@
                 )
         {
         }
+
+        public override void ExecuteCommand()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

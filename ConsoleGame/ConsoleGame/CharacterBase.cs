@@ -1,6 +1,6 @@
 ﻿namespace ConsoleGame
 {
-    public abstract class CharacterBase
+    public abstract class CharacterBase : Interface.ExecuteCommand
     {
         public int _id;
         public string _name;
@@ -28,5 +28,7 @@
         }
 
         protected bool ExistID { get => _id != int.MinValue; }
+
+        public abstract void ExecuteCommand();
     }
 }
