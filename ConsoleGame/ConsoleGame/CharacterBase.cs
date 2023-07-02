@@ -11,7 +11,6 @@
         public int _speed;
 
         public CharacterBase(
-            int id,
             string name,
             int max_hp,
             int attack,
@@ -19,9 +18,10 @@
             int speed
             )
         {
-            _id         = id;
+            _id         = int.MinValue;
             _name       = name;
             _max_hp     = max_hp;
+            _current_hp = max_hp;
             _attack     = attack;
             _deffence   = deffence;
             _speed      = speed;
