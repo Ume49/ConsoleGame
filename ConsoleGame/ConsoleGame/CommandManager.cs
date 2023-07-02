@@ -18,7 +18,9 @@ namespace ConsoleGame
         private Phase _phase;
             
 
-        public CommandManager() { }
+        public CommandManager() {
+            _commands = new List<Command>();
+        }
 
         public List<string> Output()
         {
