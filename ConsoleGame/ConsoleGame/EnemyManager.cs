@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace ConsoleGame
 {
-    public class EnemyManager : IOutputable
+    public class EnemyManager : IOutputable , ICommandListGettable
     {
         List<Enemy> _enemies;
 
@@ -34,6 +34,11 @@ namespace ConsoleGame
         {
             _enemies.Add(enemy);
             return this;
+        }
+
+        public List<Command> CommandList
+        {
+            get => throw new NotImplementedException();
         }
     }
 }
