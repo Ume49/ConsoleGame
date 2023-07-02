@@ -10,7 +10,7 @@
         }
 
         public Act act;
-        public CharacterBase? who;
-        public CharacterBase? target;
+        public CharacterBase who;
+        public List<CharacterBase>? target;
     }
 }
