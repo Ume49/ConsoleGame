@@ -16,8 +16,21 @@ namespace ConsoleGame
         public int _deffence;
         public int _speed;
 
-        public CharacterBase()
+        public CharacterBase(
+            int id,
+            string name,
+            int max_hp,
+            int attack,
+            int deffence,
+            int speed
+            )
         {
+            _id         = id;
+            _name       = name;
+            _max_hp     = max_hp;
+            _attack     = attack;
+            _deffence   = deffence;
+            _speed      = speed;
         }
     }
 }
