@@ -26,5 +26,7 @@
             _deffence   = deffence;
             _speed      = speed;
         }
+
+        protected bool ExistID { get => _id != int.MinValue; }
     }
 }
