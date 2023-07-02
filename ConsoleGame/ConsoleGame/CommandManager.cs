@@ -28,5 +28,10 @@
             _commands.Add(command);
             return this;
         }
+
+        public void SortCommand()
+        {
+            _commands = _commands.OrderBy(c => c.speed).ThenBy(x => Guid.NewGuid()).ToList();
+        }
     }
 }
