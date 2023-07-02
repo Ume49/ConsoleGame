@@ -10,7 +10,7 @@
         }
 
         public Act act;
-        public int who;
-        public int target;
+        public CharacterBase? who;
+        public CharacterBase? target;
     }
 }
