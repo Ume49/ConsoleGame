@@ -19,12 +19,13 @@ namespace ConsoleGame
             List<string> output = new List<string>(_enemies.Count * 3 + 2);
 
             output.Add("・敵");
+            output.Enter();
 
             foreach (var e in _enemies)
             {
                 output.Add(e._name);
                 output.Add($"HP: {e._current_hp} / {e._max_hp}");
-                output.Add(string.Empty);
+                output.Enter();
             }
 
             return output;

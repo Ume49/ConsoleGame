@@ -26,13 +26,13 @@ namespace ConsoleGame
 
             List<string> output = new List<string>();
             output.Add("・プレイヤー");
-            output.Add(string.Empty);
+            output.Enter();
 
             foreach(var p in _players) 
             {
                 output.Add(p._name);
                 output.Add($"HP: {p._current_hp} / {p._max_hp}");
-                output.Add(string.Empty);
+                output.Enter();
             }
 
             return output;
