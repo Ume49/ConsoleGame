@@ -2,11 +2,11 @@
 {
     public class TextGenerater
     {
-        List<IOutputable> _elements;
+        List<Interface.Output> _elements;
 
         public TextGenerater()
         {
-            _elements = new List<IOutputable>();
+            _elements = new List<Interface.Output>();
         }
 
         private void Reset()
@@ -33,7 +33,7 @@
             return this;
         }
 
-        public TextGenerater AddOutput(IOutputable output)
+        public TextGenerater AddOutput(Interface.Output output)
         {
             _elements.Add(output);
             return this;

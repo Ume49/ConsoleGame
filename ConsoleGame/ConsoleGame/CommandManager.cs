@@ -1,6 +1,6 @@
 ﻿namespace ConsoleGame
 {
-    public class CommandManager : IOutputable
+    public class CommandManager : Interface.Output
     {
         public enum Phase
         {

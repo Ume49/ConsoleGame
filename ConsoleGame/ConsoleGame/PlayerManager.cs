@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace ConsoleGame
 {
-    public class PlayerManager : IOutputable
+    public class PlayerManager : Interface.Output
     {
         List<Player> _players;
 
