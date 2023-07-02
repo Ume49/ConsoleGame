@@ -27,16 +27,18 @@ text_generater.AddOutput(player_manager);
 }
 
 {
-    Player player_sowrdman = new Player();
-    player_sowrdman._name   = "剣士";
-    player_sowrdman._hp     = 10;
-    player_sowrdman._attack = 3;
+    Player player_sowrdman = new Player(
+            name: "剣士",
+            max_hp: 10,
+            attack: 3
+        );
     player_manager.AddPlayer(player_sowrdman);
 
-    Player player_sorcerer = new Player();
-    player_sorcerer._name   = "魔法使い";
-    player_sorcerer._hp     = 6;
-    player_sorcerer._attack = 1;
+    Player player_sorcerer = new Player(
+            name: "魔法使い",
+            max_hp: 6,
+            attack: 1
+        );
     player_manager.AddPlayer(player_sorcerer);
 }
 
