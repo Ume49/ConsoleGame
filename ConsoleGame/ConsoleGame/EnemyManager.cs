@@ -23,7 +23,7 @@ namespace ConsoleGame
             foreach (var e in _enemies)
             {
                 output.Add(e._name);
-                output.Add($"HP: {e._hp}");
+                output.Add($"HP: {e._current_hp} / {e._max_hp}");
                 output.Add(string.Empty);
             }
 

@@ -31,7 +31,7 @@ namespace ConsoleGame
             foreach(var p in _players) 
             {
                 output.Add(p._name);
-                output.Add($"HP: {p._hp}");
+                output.Add($"HP: {p._current_hp} / {p._max_hp}");
                 output.Add(string.Empty);
             }
 
