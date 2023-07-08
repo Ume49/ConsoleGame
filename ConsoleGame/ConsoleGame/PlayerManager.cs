@@ -26,6 +26,7 @@ namespace ConsoleGame
         public PlayerManager AddPlayer(Player player)
         {
             _players.Add(player);
+            _index = 0;
             return this;
         }
 
