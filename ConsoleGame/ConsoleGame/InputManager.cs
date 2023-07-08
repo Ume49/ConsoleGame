@@ -12,6 +12,13 @@
         CommandManager _command_manager;
 
         Command? _current_command;
+
+        public InputManager(in CommandManager c) {
+            _phase = Phase.What;
+            _command_manager = c;
+            _current_command = null;
+        }
+
         public void Output()
         {
             List<string> output = new List<string>();
