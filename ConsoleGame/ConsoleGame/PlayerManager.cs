@@ -58,5 +58,7 @@ namespace ConsoleGame
 
             return result;
         }
+
+        public bool CanBackward { get => _index > 0; }
     }
 }
