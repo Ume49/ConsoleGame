@@ -67,6 +67,7 @@ do
             // 現在のプレイヤー・エネミーの情報を注入
 
             turn_count++;
+            battlePhase = BattlePhase.Input;
             break;
         case BattlePhase.Input:
             // switch
