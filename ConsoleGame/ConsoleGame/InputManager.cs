@@ -11,6 +11,8 @@
         Phase _phase;
         PlayerManager _player_manager;
         CommandManager _command_manager;
+
+        Command? _current_command;
         public List<string> Output()
         {
             List<string> output = new List<string>();
