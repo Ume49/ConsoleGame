@@ -30,6 +30,11 @@ namespace ConsoleGame
 
         public Player CurrentPlayer { get => _players[_index]; }
 
+        public List<CharacterBase> CurrentCharacter
+        {
+            get => _players.Select(x => (CharacterBase)x).ToList();
+        }
+
         public void Output()
         {
             Debug.Assert(_players.Count > 0);
