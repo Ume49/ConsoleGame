@@ -89,6 +89,7 @@ do
             break;
         case BattlePhase.EnemyThink:
             command_manager.AddCommand(enemy_manager.ThinkEnemyCommand());
+            battlePhase = BattlePhase.Result;
             break;
         case BattlePhase.Result:
             // コマンドを優先度順にソート
