@@ -13,6 +13,8 @@ InputManager input_manager = new InputManager(command_manager);
 
 BattlePhase battlePhase = BattlePhase.Input;
 
+int turn_count = 0;
+
 {
     Enemy enemy_slime = new Enemy(
             name: "岩スライム",
@@ -53,6 +55,8 @@ do
     Console.WriteLine();
 #endif
 
+    Console.WriteLine($"ターン : {turn_count}");
+
     // エネミーとプレイヤーの情報表示
     enemy_manager.Output();
     player_manager.Output();
@@ -61,6 +65,8 @@ do
     {
         case BattlePhase.TurnInit:
             // 現在のプレイヤー・エネミーの情報を注入
+
+            turn_count++;
             break;
         case BattlePhase.Input:
             // switch
