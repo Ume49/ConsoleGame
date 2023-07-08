@@ -1,12 +1,15 @@
 ﻿Program 
 	InputManager
 		InputCommand
+		CommandManager プレイヤーのコマンドを積むために使用
+		Player プレイヤーがどういう行動をしたいのか取得する
 	CommandManager
 		Command
 	PlayerManager
 		Player
 	EnemyManager
 		Ememy
+		CommandManager エネミーの行動を積むために使用
 
 
 ターンの流れ
@@ -23,4 +26,8 @@
 			コマンド表示
 			＊できればここで待機処理
 			ダメージ表示
-		
+
+
+プレイヤーの入力
+	選択中のプレイヤー名表示
+	
