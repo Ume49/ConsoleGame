@@ -70,5 +70,14 @@ namespace ConsoleGame
 
             return this;
         }
+
+        public PlayerManager BackwardPlayer()
+        {
+            _index--;
+
+            Debug.Assert(_index >= 0);
+
+            return this;
+        }
     }
 }
