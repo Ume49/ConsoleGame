@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
+using static ConsoleGame.Command;
 
 namespace ConsoleGame
 {
@@ -10,9 +11,16 @@ namespace ConsoleGame
         List<Player> _players;
         int _index;
 
+        readonly List<(Act command ,string name, string message)> _message_list;
+
         public PlayerManager()
         {
             _players = new List<Player>();
+            _message_list = new List<(Act, string, string)>() { 
+                (Act.Attack ,   "攻撃", "1"),
+                (Act.Deffence,  "防御", "2"),
+                (Act.Special,   "特殊", "3"),
+            };
         }
 
         public PlayerManager AddPlayer(Player player)
