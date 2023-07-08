@@ -56,6 +56,7 @@ do
     switch (battlePhase)
     {
         case BattlePhase.TurnInit:
+            // 現在のプレイヤー・エネミーの情報を注入
             break;
         case BattlePhase.Input:
             // switch
