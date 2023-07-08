@@ -92,7 +92,7 @@ do
             battlePhase = BattlePhase.Result;
             break;
         case BattlePhase.Result:
-            // コマンドを優先度順にソート
+            command_manager.SortCommand();
 
             // foreach
 
