@@ -74,9 +74,11 @@ do
             battlePhase = BattlePhase.Input;
             break;
         case BattlePhase.Input:
-            // switch
-                // 何をするのか
-                // 誰にするのか
+            if (input_manager.Question())
+            {
+                // 次のプレイヤー選択
+                // 全プレイヤーのコマンドを受け取ったら次のフェーズへ
+            }
             break;
         case BattlePhase.EnemyThink:
             // エネミーの行動決定してコマンドに積む
