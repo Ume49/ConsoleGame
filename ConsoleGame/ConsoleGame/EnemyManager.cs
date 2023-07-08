@@ -37,5 +37,10 @@ namespace ConsoleGame
         {
             get => _enemies.Select(x => (CharacterBase)x).ToList();
         }
+
+        public List<Command> ThinkEnemyCommand()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
