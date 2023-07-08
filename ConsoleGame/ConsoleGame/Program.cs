@@ -67,6 +67,9 @@ do
             // 現在のエネミーの情報を注入
             input_manager.CurrentSelectPlayer = player_manager.CurrentPlayer;
 
+            input_manager.AddCurrentTurnCharacter(player_manager.CurrentAliveCharacterList);
+            input_manager.AddCurrentTurnCharacter(enemy_manager .CurrentAliveCharacterList);
+
             turn_count++;
             battlePhase = BattlePhase.Input;
             break;
