@@ -1,0 +1,26 @@
+﻿Program 
+	InputManager
+		InputCommand
+	CommandManager
+		Command
+	PlayerManager
+		Player
+	EnemyManager
+		Ememy
+
+
+ターンの流れ
+	プレイヤー・エネミーの情報を表示する
+
+	：入力受付
+		プレイヤーの数だけループ
+			入力の候補表示する
+			ユーザーからの入力を聞く
+			入力からコマンド作成
+	：結果表示
+		コマンドを優先度順にソート
+		コマンド処理
+			コマンド表示
+			＊できればここで待機処理
+			ダメージ表示
+		
