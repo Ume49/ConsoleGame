@@ -1,6 +1,8 @@
-﻿namespace ConsoleGame
+﻿using System.Diagnostics;
+
+namespace ConsoleGame
 {
-    public class InputManager : Interface.Output
+    public class InputManager
     {
         public enum Phase
         {
@@ -33,13 +35,13 @@
             _current_turn_characters.AddRange(list);
         }
 
-        public void Output()
+        public bool Question()
         {
-            List<string> output = new List<string>();
-            
-            Console.WriteLine($"  選択キャラ：{player._name}");
+            Debug.Assert(_current_player != null);
+            Debug.Assert(_current_turn_characters.Count > 0);
 
-            Console.WriteLine("どうする？");
+            Console.WriteLine($"  選択キャラ：{_current_player._name}");
+
             Console.WriteLine("選びたい行動を入力してください");
             Console.WriteLine("選びたい行動のキーを入力してからEnter");
             Console.WriteLine("  {選びたい行動} : {対応するキー}");
@@ -48,15 +50,23 @@
             switch (_phase)
             {
                 case Phase.What:
-                    Console.WriteLine( "  攻撃 : 1 , 防御 : 2 , 特殊行動 : 3");
+                    Console.WriteLine("なにをする？");
+                    Console.WriteLine("  攻撃 : 1 , 防御 : 2 , 特殊行動 : 3");
                     break;
                 case Phase.Who:
-                    Console.WriteLine($"  対象を選択してください");
-                    Console.WriteLine($"  戻る : N");
-
-                    throw new NotImplementedException();
+                    Debug.Assert(_current_command != null);
+                    Console.WriteLine("誰に？");
+                    for(int i = 0; i<_current_turn_characters.Count; i++)
+                    {
+                        Console.WriteLine($"{_current_turn_characters[i]._name} : {i}");
+                    }
+                    Console.WriteLine("行動選択へ戻る : N");
+                    break;
             }
-        }
+
+            var input = Console.ReadLine();
+
+            throw new NotImplementedException();
         }
     }
 }
