@@ -30,22 +30,19 @@ namespace ConsoleGame
 
         public Player CurrentPlayer { get => _players[_index]; }
 
-        public List<string> Output()
+        public void Output()
         {
             Debug.Assert(_players.Count > 0);
 
-            List<string> output = new List<string>();
-            output.Add("・プレイヤー");
-            output.Enter();
+            Console.WriteLine("・プレイヤー");
+            Console.WriteLine();
 
-            foreach(var p in _players) 
+            foreach(var p in _players)
             {
-                output.Add($"  {p._name}");
-                output.Add($"    HP: {p._current_hp} / {p._max_hp}");
-                output.Enter();
+                Console.WriteLine($"  {p._name}");
+                Console.WriteLine($"    HP: {p._current_hp} / {p._max_hp}");
+                Console.WriteLine();
             }
-
-            return output;
         }
 
         public bool IsMessageValid(string Message)

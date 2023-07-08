@@ -2,6 +2,6 @@
 {
     public interface Output
     {
-        List<string> Output();
+        void Output();
     }
 }

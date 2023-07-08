@@ -16,11 +16,9 @@
             _commands = new List<Command>();
         }
 
-        public List<string> Output()
+        public void Output()
         {
-            List<string> output = new List<string>();
-
-            return output;
+            throw new NotImplementedException();
         }
 
         public CommandManager AddCommand(in Command command)

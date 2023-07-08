@@ -12,23 +12,19 @@ namespace ConsoleGame
             _enemies = new List<Enemy>();
         }
 
-        public List<string> Output()
+        public void Output()
         {
             Debug.Assert(_enemies.Count > 0);
-
-            List<string> output = new List<string>(_enemies.Count * 3 + 2);
-
-            output.Add("・敵");
-            output.Enter();
+            
+            Console.WriteLine("・敵");
+            Console.WriteLine();
 
             foreach (var e in _enemies)
             {
-                output.Add($"  {e._name}");
-                output.Add($"    HP: {e._current_hp} / {e._max_hp}");
-                output.Enter();
+                Console.WriteLine($"  {e._name}");
+                Console.WriteLine($"    HP: {e._current_hp} / {e._max_hp}");
+                Console.WriteLine();
             }
-
-            return output;
         }
 
         public EnemyManager AddEnemy(Enemy enemy)
