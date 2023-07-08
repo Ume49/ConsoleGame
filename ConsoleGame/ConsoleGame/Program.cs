@@ -11,7 +11,7 @@ CommandManager command_manager = new CommandManager();
 
 InputManager input_manager = new InputManager();
 
-BattlePhase battlePhase = BattlePhase.Input;
+BattlePhase battlePhase = BattlePhase.TurnInit;
 
 int turn_count = 0;
 
