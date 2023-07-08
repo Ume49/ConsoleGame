@@ -37,5 +37,10 @@ namespace ConsoleGame
         {
             get => throw new NotImplementedException();
         }
+
+        public List<CharacterBase> CurrentEnemies
+        {
+            get => _enemies.Select(x => (CharacterBase)x).ToList();
+        }
     }
 }
