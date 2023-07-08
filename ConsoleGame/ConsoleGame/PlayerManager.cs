@@ -8,6 +8,7 @@ namespace ConsoleGame
     public class PlayerManager : Interface.Output
     {
         List<Player> _players;
+        int _index;
 
         public PlayerManager()
         {
