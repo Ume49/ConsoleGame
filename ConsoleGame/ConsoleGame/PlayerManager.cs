@@ -79,5 +79,10 @@ namespace ConsoleGame
 
             return this;
         }
+
+        public Act ConvertCommand(string message)
+        {
+            return _message_list.Find(x => x.message == message).command;
+        }
     }
 }
