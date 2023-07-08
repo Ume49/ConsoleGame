@@ -4,6 +4,7 @@
     {
         TurnInit,
         Input,
+        EnemyThink,
         Result
     }
 }

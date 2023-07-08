@@ -74,6 +74,9 @@ do
                 // 何をするのか
                 // 誰にするのか
             break;
+        case BattlePhase.EnemyThink:
+            // エネミーの行動決定してコマンドに積む
+            break;
         case BattlePhase.Result:
             // コマンドを優先度順にソート
 
