@@ -14,10 +14,13 @@
         Command? _current_command;
         Player? _current_player;
 
+        List<CharacterBase> _current_turn_characters;
+
         public InputManager(in CommandManager c) {
             _phase = Phase.What;
             _command_manager = c;
             _current_command = null;
+            _current_turn_characters = new List<CharacterBase>();
         }
 
         public Player CurrentSelectPlayer
