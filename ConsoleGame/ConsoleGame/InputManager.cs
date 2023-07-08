@@ -28,6 +28,14 @@ namespace ConsoleGame
             set => _current_player = value;
         }
 
+        public Command CurrentCommand
+        {
+            get {
+                Debug.Assert(_current_command!= null);
+                return (Command)_current_command;
+            }
+        }
+
         public void AddCurrentTurnCharacter(List<CharacterBase> list)
         {
             _current_turn_characters.AddRange(list);
