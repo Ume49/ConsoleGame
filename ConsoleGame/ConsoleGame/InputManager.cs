@@ -20,6 +20,11 @@
             _current_command = null;
         }
 
+        public Player CurrentSelectPlayer
+        {
+            set => _current_player = value;
+        }
+
         public void Output()
         {
             List<string> output = new List<string>();
