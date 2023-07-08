@@ -57,14 +57,12 @@ do
 
     Console.WriteLine($"ターン : {turn_count}");
 
-    // エネミーとプレイヤーの情報表示
-    enemy_manager.Output();
+    enemy_manager .Output();
     player_manager.Output();
 
     switch (battlePhase)
     {
         case BattlePhase.TurnInit:
-            // 現在のエネミーの情報を注入
             input_manager.CurrentSelectPlayer = player_manager.CurrentPlayer;
 
             input_manager.AddCurrentTurnCharacter(player_manager.CurrentAliveCharacterList);
