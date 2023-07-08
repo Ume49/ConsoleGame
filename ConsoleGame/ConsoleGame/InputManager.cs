@@ -28,6 +28,11 @@
             set => _current_player = value;
         }
 
+        public void AddCurrentTurnCharacter(List<CharacterBase> list)
+        {
+            _current_turn_characters.AddRange(list);
+        }
+
         public void Output()
         {
             List<string> output = new List<string>();
