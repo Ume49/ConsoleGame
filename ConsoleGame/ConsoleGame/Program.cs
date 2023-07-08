@@ -88,7 +88,7 @@ do
             }
             break;
         case BattlePhase.EnemyThink:
-            // エネミーの行動決定してコマンドに積む
+            command_manager.AddCommand(enemy_manager.ThinkEnemyCommand());
             break;
         case BattlePhase.Result:
             // コマンドを優先度順にソート
