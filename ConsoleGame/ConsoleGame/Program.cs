@@ -79,8 +79,14 @@ do
                 Command command = input_manager.CurrentCommand;
                 command_manager.AddCommand(command);
 
-                // 次のプレイヤー選択
-                // 全プレイヤーのコマンドを受け取ったら次のフェーズへ
+                if (player_manager.CanForward)
+                {
+                    player_manager.ForwardPlayer();
+                }
+                else
+                {
+                    battlePhase = BattlePhase.EnemyThink;
+                }
             }
             break;
         case BattlePhase.EnemyThink:
