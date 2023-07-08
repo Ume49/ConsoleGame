@@ -60,5 +60,6 @@ namespace ConsoleGame
         }
 
         public bool CanBackward { get => _index > 0; }
+        public bool CanForward  { get => _index < _players.LastIndex(); }
     }
 }
