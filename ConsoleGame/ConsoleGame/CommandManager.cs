@@ -27,6 +27,12 @@
             return this;
         }
 
+        public CommandManager AddCommand(in List<Command> commands)
+        {
+            _commands.AddRange(commands);
+            return this;
+        }
+
         public void SortCommand()
         {
             _commands = _commands.OrderBy(c => c.speed).ThenBy(x => Guid.NewGuid()).ToList();
