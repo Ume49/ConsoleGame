@@ -1,7 +1,11 @@
 ﻿namespace ConsoleGame
 {
-    public class InputManager
+    public class InputManager : Interface.Output
     {
-        public InputManager() { }
+        public List<string> Output()
+        {
+            List<string> output = new List<string>();
+            return output;
+        }
     }
 }
