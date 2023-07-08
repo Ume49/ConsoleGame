@@ -47,8 +47,31 @@ BattlePhase battlePhase = BattlePhase.Input;
 
 do
 {
-    text_generater.Refresh();
-    
-    Console.ReadLine();
+#if DEBUG
+    Console.WriteLine("＊デバッグモード");
+    Console.WriteLine();
+#endif
+
+    // エネミーとプレイヤーの情報表示
+    enemy_manager.Output();
+    player_manager.Output();
+
+    switch (battlePhase)
+    {
+        case BattlePhase.Input:
+            // switch
+                // 何をするのか
+                // 誰にするのか
+            break;
+        case BattlePhase.Result:
+            // コマンドを優先度順にソート
+
+            // foreach
+
+            // 行動表示
+
+            // 結果表示
+            break;
+    }
 }
 while (true);
