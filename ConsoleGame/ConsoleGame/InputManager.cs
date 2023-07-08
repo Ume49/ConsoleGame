@@ -12,6 +12,7 @@
         CommandManager _command_manager;
 
         Command? _current_command;
+        Player? _current_player;
 
         public InputManager(in CommandManager c) {
             _phase = Phase.What;
