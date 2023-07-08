@@ -4,7 +4,7 @@ using static ConsoleGame.Command;
 
 namespace ConsoleGame
 {
-    public class PlayerManager : Interface.Output
+    public class PlayerManager : Interface.Output , Interface.CurrentAliveCharacterList
     {
         List<Player> _players;
         int _index;
@@ -30,7 +30,7 @@ namespace ConsoleGame
 
         public Player CurrentPlayer { get => _players[_index]; }
 
-        public List<CharacterBase> CurrentCharacter
+        public List<CharacterBase> CurrentAliveCharacterList
         {
             get => _players.Select(x => (CharacterBase)x).ToList();
         }

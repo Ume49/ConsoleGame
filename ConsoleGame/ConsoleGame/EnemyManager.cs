@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace ConsoleGame
 {
-    public class EnemyManager : Interface.Output , Interface.CommandList
+    public class EnemyManager : Interface.Output , Interface.CommandList , Interface.CurrentAliveCharacterList
     {
         List<Enemy> _enemies;
 
@@ -38,7 +38,7 @@ namespace ConsoleGame
             get => throw new NotImplementedException();
         }
 
-        public List<CharacterBase> CurrentEnemies
+        public List<CharacterBase> CurrentAliveCharacterList
         {
             get => _enemies.Select(x => (CharacterBase)x).ToList();
         }
