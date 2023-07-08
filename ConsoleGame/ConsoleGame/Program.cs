@@ -50,6 +50,8 @@ int turn_count = 0;
 
 do
 {
+    Console.Clear();
+
 #if DEBUG
     Console.WriteLine("＊デバッグモード");
     Console.WriteLine();
