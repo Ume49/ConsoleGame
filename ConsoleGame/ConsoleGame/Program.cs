@@ -9,7 +9,7 @@ PlayerManager player_manager = new PlayerManager();
 
 CommandManager command_manager = new CommandManager();
 
-InputManager input_manager = new InputManager(command_manager);
+InputManager input_manager = new InputManager();
 
 BattlePhase battlePhase = BattlePhase.Input;
 
