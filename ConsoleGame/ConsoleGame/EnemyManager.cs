@@ -40,7 +40,14 @@ namespace ConsoleGame
 
         public List<Command> ThinkEnemyCommand()
         {
-            throw new NotImplementedException();
+            List<Command> list = new List<Command>();
+
+            foreach(var e in _enemies)
+            {
+                // エネミーの行動を決定するメソッド
+            }
+
+            return list;
         }
     }
 }
