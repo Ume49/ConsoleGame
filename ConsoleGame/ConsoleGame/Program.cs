@@ -55,6 +55,8 @@ do
 
     switch (battlePhase)
     {
+        case BattlePhase.TurnInit:
+            break;
         case BattlePhase.Input:
             // switch
                 // 何をするのか
