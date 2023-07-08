@@ -30,6 +30,8 @@ namespace ConsoleGame
             return this;
         }
 
+        public Player CurrentPlayer { get => _players[_index]; }
+
         public List<string> Output()
         {
             Debug.Assert(_players.Count > 0);
@@ -46,6 +48,15 @@ namespace ConsoleGame
             }
 
             return output;
+        }
+
+        public bool IsMessageValid(string Message)
+        {
+            bool result = false;
+
+            _message_list.ForEach(x => result |= (Message == x.message));
+
+            return result;
         }
     }
 }
