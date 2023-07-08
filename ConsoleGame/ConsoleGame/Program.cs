@@ -76,6 +76,9 @@ do
         case BattlePhase.Input:
             if (input_manager.Question())
             {
+                Command command = input_manager.CurrentCommand;
+                command_manager.AddCommand(command);
+
                 // 次のプレイヤー選択
                 // 全プレイヤーのコマンドを受け取ったら次のフェーズへ
             }
