@@ -7,6 +7,8 @@ EnemyManager enemy_manager = new EnemyManager();
 
 PlayerManager player_manager = new PlayerManager();
 
+CommandManager command_manager = new CommandManager();
+
 BattlePhase battlePhase = BattlePhase.Input;
 
 {
