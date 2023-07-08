@@ -9,14 +9,12 @@
         }
 
         Phase _phase;
-        PlayerManager _player_manager;
         CommandManager _command_manager;
 
         Command? _current_command;
         public void Output()
         {
             List<string> output = new List<string>();
-            var player = _player_manager.CurrentPlayer;
             
             Console.WriteLine($"  選択キャラ：{player._name}");
 
