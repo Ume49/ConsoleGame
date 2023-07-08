@@ -64,7 +64,8 @@ do
     switch (battlePhase)
     {
         case BattlePhase.TurnInit:
-            // 現在のプレイヤー・エネミーの情報を注入
+            // 現在のエネミーの情報を注入
+            input_manager.CurrentSelectPlayer = player_manager.CurrentPlayer;
 
             turn_count++;
             battlePhase = BattlePhase.Input;
