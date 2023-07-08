@@ -9,6 +9,7 @@
         }
 
         Phase _phase;
+        PlayerManager _player_manager;
         public List<string> Output()
         {
             List<string> output = new List<string>();
