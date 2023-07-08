@@ -2,13 +2,10 @@
 
 using ConsoleGame;
 
-TextGenerater text_generater = new TextGenerater();
 
 EnemyManager enemy_manager = new EnemyManager();
-text_generater.AddOutput(enemy_manager);
 
 PlayerManager player_manager = new PlayerManager();
-text_generater.AddOutput(player_manager);
 
 BattlePhase battlePhase = BattlePhase.Input;
 
