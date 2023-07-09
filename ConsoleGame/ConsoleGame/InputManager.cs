@@ -17,10 +17,13 @@ namespace ConsoleGame
 
         List<CharacterBase> _current_turn_characters;
 
+        bool? _chara_select_returnable;
+
         public InputManager() {
             _phase = Phase.What;
             _current_command = null;
             _current_turn_characters = new List<CharacterBase>();
+            _chara_select_returnable = null;
         }
 
         public Player CurrentSelectPlayer
