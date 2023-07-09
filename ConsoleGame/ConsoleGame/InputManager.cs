@@ -63,7 +63,7 @@ namespace ConsoleGame
             _current_turn_characters.AddRange(list);
         }
 
-        public bool Question()
+        public Result Question()
         {
             Debug.Assert(_current_player != null);
             Debug.Assert(_current_turn_characters.Count > 0);
