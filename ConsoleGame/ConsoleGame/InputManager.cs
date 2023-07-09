@@ -10,6 +10,13 @@ namespace ConsoleGame
             Who,
         }
 
+        public enum Result
+        {
+            Continue,
+            Backward,
+            End,
+        }
+
         Phase _phase;
 
         Command? _current_command;
