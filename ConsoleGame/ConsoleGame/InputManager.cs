@@ -74,5 +74,17 @@ namespace ConsoleGame
 
             throw new NotImplementedException();
         }
+
+        private bool IsInputValid(string input)
+        {
+            switch(_phase)
+            {
+                case Phase.What:
+
+                    break;
+                case Phase.Who:
+                    break;
+            }
+        }
     }
 }
