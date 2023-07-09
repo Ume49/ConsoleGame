@@ -76,19 +76,24 @@ do
             battlePhase = BattlePhase.Input;
             break;
         case BattlePhase.Input:
-            if (input_manager.Question())
-            {
-                Command command = input_manager.CurrentCommand;
-                command_manager.AddCommand(command);
+            var input_result = input_manager.Question();
 
-                if (player_manager.CanForward)
-                {
-                    player_manager.ForwardPlayer();
-                }
-                else
-                {
-                    battlePhase = BattlePhase.EnemyThink;
-                }
+            switch (input_result) {
+                case InputManager.Result.Continue:
+                    break;
+                case InputManager.Result.End:
+                    Command command = input_manager.CurrentCommand;
+                    command_manager.AddCommand(command);
+
+                    if (player_manager.CanForward)
+                    {
+                        player_manager.ForwardPlayer();
+                    }
+                    else
+                    {
+                        battlePhase = BattlePhase.EnemyThink;
+                    }
+                    break;
             }
             break;
         case BattlePhase.EnemyThink:
