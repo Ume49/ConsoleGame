@@ -70,6 +70,8 @@ do
             input_manager.AddCurrentTurnCharacter(player_manager.CurrentAliveCharacterList);
             input_manager.AddCurrentTurnCharacter(enemy_manager .CurrentAliveCharacterList);
 
+            input_manager.CharaSelectReturnable = player_manager.CanBackward;
+
             turn_count++;
             battlePhase = BattlePhase.Input;
             break;
