@@ -25,6 +25,13 @@ namespace ConsoleGame
             _current_turn_characters = new List<CharacterBase>();
             _chara_select_returnable = null;
         }
+        public void Clear()
+        {
+            _phase = Phase.What;
+            _current_command = null;
+            _chara_select_returnable = null;
+            _current_turn_characters.Clear();
+        }
 
         public Player CurrentSelectPlayer
         {
