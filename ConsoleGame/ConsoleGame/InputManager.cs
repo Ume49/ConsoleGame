@@ -31,6 +31,11 @@ namespace ConsoleGame
             set => _current_player = value;
         }
 
+        public bool CharaSelectReturnable
+        {
+            set => _chara_select_returnable = value;
+        }
+
         public Command CurrentCommand
         {
             get {
