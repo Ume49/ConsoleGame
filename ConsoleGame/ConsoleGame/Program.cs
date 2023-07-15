@@ -1,7 +1,7 @@
 ﻿// エントリポイント
 
 using ConsoleGame;
-
+using System.Diagnostics;
 
 EnemyManager enemy_manager = new EnemyManager();
 
@@ -80,6 +80,11 @@ do
 
             switch (input_result) {
                 case InputManager.Result.Continue:
+                    break;
+                case InputManager.Result.BackwardPlayer:
+                    Debug.Assert(player_manager.CanBackward);
+                    player_manager.BackwardPlayer();
+                    input_manager.CurrentSelectPlayer = player_manager.CurrentPlayer;
                     break;
                 case InputManager.Result.End:
                     Command command = input_manager.CurrentCommand;

@@ -13,7 +13,7 @@ namespace ConsoleGame
         public enum Result
         {
             Continue,
-            Backward,
+            BackwardPlayer,
             End,
         }
 
@@ -81,6 +81,10 @@ namespace ConsoleGame
                 case Phase.What:
                     Console.WriteLine("なにをする？");
                     Console.WriteLine("  攻撃 : 1 , 防御 : 2 , 特殊行動 : 3");
+                    if (_chara_select_returnable.Value)
+                    {
+                        Console.WriteLine("  前のキャラに戻る : N");
+                    }
                     break;
                 case Phase.Who:
                     Debug.Assert(_current_command != null);
