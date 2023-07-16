@@ -99,16 +99,45 @@ namespace ConsoleGame
             var input = Console.ReadLine();
 
             throw new NotImplementedException();
+            // inputから入力を判定・コマンドを作成するなりreturnするなり対応
+
+            if(input == "N")
+            {
+                if (BackwardPhase())
+                {
+                    return Result.BackwardPlayer;
+                }
+                else
+                {
+                    return Result.Continue;
+                }
+            }
+
+            MakeCommand(input);
         }
 
-        private bool IsInputValid(string input)
+        private void MakeCommand(string input)
         {
             switch(_phase)
             {
                 case Phase.What:
+                    switch (input)
+                    {
+                        case "1":
+                            _current_command = new Command();
+                            _current_command.act = Command.Act.Attack;
+                            _current_command.who = _current_player;
+                            break;
+                        case "2":
 
+
+                            break;
+                        case "3":
+                            break;
+                    }
                     break;
                 case Phase.Who:
+
                     break;
             }
         }
