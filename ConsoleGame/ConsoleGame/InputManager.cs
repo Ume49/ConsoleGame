@@ -19,7 +19,7 @@ namespace ConsoleGame
 
         Phase _phase;
 
-        Command? _current_command;
+        Command _current_command;
         Player? _current_player;
 
         List<CharacterBase> _current_turn_characters;
@@ -28,14 +28,14 @@ namespace ConsoleGame
 
         public InputManager() {
             _phase = Phase.What;
-            _current_command = null;
+            _current_command = new Command();
             _current_turn_characters = new List<CharacterBase>();
             _chara_select_returnable = null;
         }
         public void Clear()
         {
             _phase = Phase.What;
-            _current_command = null;
+            _current_command = new Command();
             _chara_select_returnable = null;
             _current_turn_characters.Clear();
         }
@@ -53,8 +53,7 @@ namespace ConsoleGame
         public Command CurrentCommand
         {
             get {
-                Debug.Assert(_current_command!= null);
-                return (Command)_current_command;
+                return _current_command;
             }
         }
 
@@ -87,7 +86,6 @@ namespace ConsoleGame
                     }
                     break;
                 case Phase.Who:
-                    Debug.Assert(_current_command != null);
                     Console.WriteLine("誰に？");
                     for(int i = 0; i<_current_turn_characters.Count; i++)
                     {
