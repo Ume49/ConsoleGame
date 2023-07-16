@@ -67,6 +67,7 @@ namespace ConsoleGame
             Debug.Assert(_current_player != null);
             Debug.Assert(_current_turn_characters.Count > 0);
             Debug.Assert(_current_turn_characters != null);
+            Debug.Assert(_chara_select_returnable != null);
 
             Console.WriteLine($"  選択キャラ：{_current_player._name}");
 
