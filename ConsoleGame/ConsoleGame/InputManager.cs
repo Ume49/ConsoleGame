@@ -112,5 +112,16 @@ namespace ConsoleGame
                     break;
             }
         }
+
+        private bool BackwardPhase()
+        {
+            if(_phase == Phase.What)
+            {
+                return true;
+            }
+
+            _phase--;
+            return false;
+        }
     }
 }
